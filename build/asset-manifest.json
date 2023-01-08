@@ -1,14 +1,14 @@
 {
   "files": {
-    "main.css": "/test/build/static/css/main.0767a01f.css",
-    "main.js": "/test/build/static/js/main.89f0bcc0.js",
-    "static/media/b0f4ca051aa111f.png": "/test/build/static/media/b0f4ca051aa111f.87296a51efbc1fb5755e.png",
-    "index.html": "/test/build/index.html",
-    "main.0767a01f.css.map": "/test/build/static/css/main.0767a01f.css.map",
-    "main.89f0bcc0.js.map": "/test/build/static/js/main.89f0bcc0.js.map"
+    "main.css": "/my_own_floppy_bird_copy_in_react/static/css/main.0767a01f.css",
+    "main.js": "/my_own_floppy_bird_copy_in_react/static/js/main.640057a0.js",
+    "static/media/b0f4ca051aa111f.png": "/my_own_floppy_bird_copy_in_react/static/media/b0f4ca051aa111f.87296a51efbc1fb5755e.png",
+    "index.html": "/my_own_floppy_bird_copy_in_react/index.html",
+    "main.0767a01f.css.map": "/my_own_floppy_bird_copy_in_react/static/css/main.0767a01f.css.map",
+    "main.640057a0.js.map": "/my_own_floppy_bird_copy_in_react/static/js/main.640057a0.js.map"
   },
   "entrypoints": [
     "static/css/main.0767a01f.css",
-    "static/js/main.89f0bcc0.js"
+    "static/js/main.640057a0.js"
   ]
 }

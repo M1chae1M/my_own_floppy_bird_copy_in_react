@@ -1,5 +1,7 @@
 My Flappy Bird copy
 
+https://m1chae1m.github.io/my_own_floppy_bird_copy_in_react/
+
     Program is a game inspired by "Flappy Bird".
     Created from scratch using react, html and css.
     The game runs in 4 states (before start, game started, dead, dead but with the ability to enter the scoreboard).

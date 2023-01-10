@@ -8,6 +8,8 @@
 # testing
 /coverage
 
+/backup 10.1.23 1454
+
 # misc
 .DS_Store
 .env.local

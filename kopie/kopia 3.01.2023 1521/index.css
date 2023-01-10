@@ -1,0 +1,18 @@
+*{box-sizing:border-box;padding:0;margin:0;}
+html,body,#root,.Blocks,#GameArea{width:100vw;height:100vh;position:relative;}
+:root{
+    --border-color:rgb(182, 30, 0);
+    --border-width:3px;
+    --border-style:solid;
+    --darkGreen:rgb(1, 88, 1);
+}
+#yourNickInput,#AddNewRecordToScoreBoards input[type="button"],#AddNewRecordToScoreBoards,.Pipe,.topPipe{display:grid !important;}
+table,#yourNickInput::placeholder{text-align:center;}
+#yourNickInput::placeholder{color:white;}
+.hidden{display:none !important;}
+#ScoreBoard tr:first-child{border-left:var(--border-style) var(--border-color) var(--border-width);}
+#ScoreBoard tr:last-child td{border-bottom:var(--border-style) var(--border-color) var(--border-width);}
+@keyframes moveblocks{
+from{left:0px;}
+to{left:-99999px;}
+}

@@ -1,0 +1,4 @@
+1. dlaczego uderzenie w ziemię nie przerywa timeinterval, a w sufit już tak?
+2. zobacz czy nie ma kodu który nie odpowiada już za nic, albo nieużywanych funkcji
+3. transform translate nie tylko o margines, ale też o szerokość rury (pipe)
+4. sprawdź zgodnie z plikiem testowym, czy rury wyglądają tak, jak powinny

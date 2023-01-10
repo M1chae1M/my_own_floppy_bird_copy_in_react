@@ -1,0 +1,12 @@
+1. dlaczego uderzenie w ziemię nie przerywa timeinterval, a w sufit już tak?
+2. zobacz czy nie ma kodu który nie odpowiada już za nic, albo nieużywanych funkcji
+3. sprawdź, czy potrzebujesz tyle stanów
+4. znowu przestała działać
+5. przepisz ruch bloków na keyframe
+6. przepisz trochę styli do komponentów
+
+
+
+7. wyłącz przesuwanie bloków w grawitacji, jedynie zmieniaj klasy
+8. jest problem przy pustej tablicy wyników
+9. po zniknięciu z pola widzenia pierwszego bloku wszystkie zaczynają się renderować ponownie

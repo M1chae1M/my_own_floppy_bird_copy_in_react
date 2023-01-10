@@ -1,0 +1,44 @@
+*{box-sizing:border-box;padding:0;margin:0;}
+html,body,#root,.Blocks,#GameArea{width:100vw;height:100vh;position:relative;}
+:root{--border-color:rgb(182, 30, 0);--border-width:3px;--border-style:solid;}
+.Block,#Bird,#PlayButton,#ShowScoreBoardsButton,#AddNewRecordToScoreBoards,#ScoreBoard,#ScoreDisplay,.Blocks,.Pipe{position:absolute;}
+#PlayButton,#AddNewRecordToScoreBoards{width:min-content;height:min-content;}
+#ScoreDisplay,#ScoreBoard{width:max-content;height:max-content;}
+#PlayButton,#ScoreDisplay,#ScoreBoard,#AddNewRecordToScoreBoards{left:0;right:0;margin-left:auto;margin-right:auto;}
+#PlayButton,#ScoreBoard,#AddNewRecordToScoreBoards{top:0;bottom:0;margin-top:auto;margin-bottom:auto;}
+#PlayButton input,#ShowScoreBoardsButton input,#ScoreDisplay,#ScoreBoard,#ScoreBoard td,#AddNewRecordToScoreBoards input[type="button"],#yourNickInput{color:white;border:solid rgb(182, 30, 0) 3px;background-color:rgb(182, 59, 3);font-weight:bold;padding-right:20px;padding-left:20px;padding-bottom:5px;}
+#PlayButton input,#ShowScoreBoardsButton input,#AddNewRecordToScoreBoards input[type="button"],#yourNickInput,#ScoreBoard{border-radius:20px;padding-top:5px;}
+#yourNickInput,#AddNewRecordToScoreBoards input[type="button"],#AddNewRecordToScoreBoards,.Pipe,.topPipe{display:grid !important;}
+.Pipe,.topPipe{background-color:green;border:rgb(1, 88, 1) var(--border-style) var(--border-width);}
+.Blocks,#GameArea,#ScoreBoard{overflow:hidden;}
+.Blocks,.Block{display:flex;}
+table,#yourNickInput::placeholder{text-align:center;}
+#ScoreDisplay,#ScoreBoard{z-index:1300;}
+#GameArea,.topPipe{position:relative;}
+.Block{width:30px;background-size:cover;}
+#ShowScoreBoardsButton{top:0%;right:0%;z-index:333;}
+#AddNewRecordToScoreBoards{z-index:999;width:20%;height:20%;}
+#AddNewRecordToScoreBoards input[type="button"]{width:90%;}
+#yourNickInput{width:100%;}
+#yourNickInput::placeholder{color:white;}
+#AddNewRecordToScoreBoards{align-items:center;justify-items:center;}
+#AddNewRecordToScoreBoards input[type="button"]{margin-top:5px;}
+#ScoreDisplay{border-bottom-left-radius:20px;border-bottom-right-radius:20px;}
+#ScoreBoard{padding:20px !important;border-spacing:0;}
+#PlayButton{z-index:600;}
+#ShowScoreBoardsButton input{border-top-right-radius:0px;border-top-left-radius:0px;border-bottom-right-radius:0px;}
+#ScoreBoard td{padding:4.5px;}
+#Game{background-size:cover;}
+.hidden{display:none !important;}
+.Pipe{width:30px;justify-content:center;border-top:none;border-bottom:none;}
+.topPipe{top:0%;width:40px;height:20px;border-radius:5px;}
+#ScoreBoard td{border:none;border-right:var(--border-style) var(--border-color) var(--border-width);border-top:var(--border-style) var(--border-color) var(--border-width);}
+#ScoreBoard tr :first-child{border-left:var(--border-style) var(--border-color) var(--border-width);}
+#ScoreBoard tr:last-child td{border-bottom:var(--border-style) var(--border-color) var(--border-width);}
+
+
+
+
+/* .boom{
+color:red
+} */

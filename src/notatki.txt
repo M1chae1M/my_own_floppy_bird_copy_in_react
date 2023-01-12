@@ -1,8 +1,6 @@
 1. dlaczego uderzenie w ziemię nie przerywa timeinterval, a w sufit już tak?
 2. zobacz czy nie ma kodu który nie odpowiada już za nic, albo nieużywanych funkcji
 3. może przepisz skakanie postaci na keyframe'y, albo zrób tak, by spadała co pixel, by wyglądało to bardziej płynnie (ewentualnie samo spadanie jako keyframe i skoki takie, jakie są) --- jednak nie, bo pojawia się problem z tym, że trzeba co chwilę przerywać animację i ją ponownie uruchamiać, bo inaczej postać przestanie spadać po kilku sekundach
-
-
-
-
 4. po śmierci bloki uciekają trochę w prawo, wygląda to dziwnie, ale w ogóle nie wpływa na komfort gry
+
+

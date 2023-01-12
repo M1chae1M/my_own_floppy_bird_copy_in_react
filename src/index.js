@@ -157,6 +157,10 @@ class GameArea extends React.Component{
                 else if(this.state.birdPosition<=minimumNumber){
                     checkIfYouCanAddNewRecord();
                     this.setState({birdPosition:0});
+                    this.setState({blocksTransformTranslateX:-blocksJumpsMargins+40});
+                    // blocksJumpsMargins=70
+                    // spaceBetweenBlocks=150
+                    
                     clearTimeout(timers);
                 }
 
@@ -164,6 +168,8 @@ class GameArea extends React.Component{
                 else if(this.state.birdPosition>heightDifference){
                     checkIfYouCanAddNewRecord();
                     this.setState({birdPosition:heightDifference});
+                    this.setState({blocksTransformTranslateX:-blocksJumpsMargins+40});
+
                     clearTimeout(timers);
                 }
 
@@ -172,6 +178,8 @@ class GameArea extends React.Component{
                 ((this.state.birdPosition>=(variables.GameArea.height-variables.firstBlock.height))&&(variables.firstBlock.width<=variables.Bird.width))){
                     checkIfYouCanAddNewRecord();
                     this.setState({birdPosition:0});
+                    this.setState({blocksTransformTranslateX:-blocksJumpsMargins+40});
+
                     clearTimeout(timers);
                 }
             }

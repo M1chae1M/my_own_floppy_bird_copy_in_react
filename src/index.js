@@ -156,20 +156,14 @@ class GameArea extends React.Component{
                 //hit the floor
                 else if(this.state.birdPosition<=minimumNumber){
                     checkIfYouCanAddNewRecord();
-                    this.setState({birdPosition:0});
-                    this.setState({blocksTransformTranslateX:-blocksJumpsMargins+40});
-                    // blocksJumpsMargins=70
-                    // spaceBetweenBlocks=150
-                    
+                    this.setState({birdPosition:0,blocksTransformTranslateX:-blocksJumpsMargins+40});
                     clearTimeout(timers);
                 }
 
                 //hit the ceiling
                 else if(this.state.birdPosition>heightDifference){
                     checkIfYouCanAddNewRecord();
-                    this.setState({birdPosition:heightDifference});
-                    this.setState({blocksTransformTranslateX:-blocksJumpsMargins+40});
-
+                    this.setState({birdPosition:heightDifference,blocksTransformTranslateX:-blocksJumpsMargins+40});
                     clearTimeout(timers);
                 }
 
@@ -177,9 +171,7 @@ class GameArea extends React.Component{
                 if(((this.state.birdPosition<=variables.secoundBlock.height)&&(variables.secoundBlock.width<=variables.Bird.width)) ||
                 ((this.state.birdPosition>=(variables.GameArea.height-variables.firstBlock.height))&&(variables.firstBlock.width<=variables.Bird.width))){
                     checkIfYouCanAddNewRecord();
-                    this.setState({birdPosition:0});
-                    this.setState({blocksTransformTranslateX:-blocksJumpsMargins+40});
-
+                    this.setState({birdPosition:0,blocksTransformTranslateX:-blocksJumpsMargins+40});
                     clearTimeout(timers);
                 }
             }

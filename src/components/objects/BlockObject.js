@@ -1,2 +1,7 @@
-class BlockObject{constructor(blockHeight){this.blockHeight=blockHeight;}}
+class BlockObject{
+    constructor(blockHeight){
+        this.blockHeight=blockHeight;
+    }
+}
+
 export default BlockObject;

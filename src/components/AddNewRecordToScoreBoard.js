@@ -1,18 +1,19 @@
 import React from "react";
 import BoardScores from "./objects/BoardScores";
-var scoreBoardTab=[];
 
-const downloadData=()=>{
-    let data=JSON.parse(localStorage.getItem('scoreBoard'));
-    if(data!==null && data !==undefined){
-        scoreBoardTab=[];
-        data.map((x,i)=>scoreBoardTab.push(x));
-    }
-}
-window.onload=downloadData();
+// var scoreBoardTab=[];
+// const downloadData=()=>{
+//     let data=JSON.parse(localStorage.getItem('scoreBoard'));
+//     if(data!==null && data !==undefined){
+//         scoreBoardTab=[];
+//         data.map((x,i)=>scoreBoardTab.push(x));
+//     }
+// }
+// window.onload=downloadData();
 
 class AddNewRecordToScoreBoards extends React.Component{
     render(){
+        var scoreBoardTab=[];
         const styles={
             AddNewRecordToScoreBoards:{
                 alignItems:'center',
@@ -110,6 +111,14 @@ class AddNewRecordToScoreBoards extends React.Component{
                 console.log('');
             }
         }
+        const downloadData=()=>{
+            let data=JSON.parse(localStorage.getItem('scoreBoard'));
+            if(data!==null && data !==undefined){
+                scoreBoardTab=[];
+                data.map((x,i)=>scoreBoardTab.push(x));
+            }
+        }
+        window.onload=downloadData();
         return(
             <div id="AddNewRecordToScoreBoards" style={styles.AddNewRecordToScoreBoards}>
                 <input type="text" placeholder="Your nick" id="yourNickInput" style={styles.yourNickInput}/>

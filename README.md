@@ -1,4 +1,5 @@
 My Flappy Bird Read.me
+https://m1chae1m.github.io/my_own_floppy_bird_copy_in_react/
 
     Program is a game inspired by "Flappy Bird".
     Created from scratch using react, html and css.
@@ -13,4 +14,3 @@ Sources:
     Bird img:
         https://i.pinimg.com/736x/93/84/21/938421307ffefbe0ea9424c78ac625aa.jpg
 
-https://m1chae1m.github.io/my_own_floppy_bird_copy_in_react/

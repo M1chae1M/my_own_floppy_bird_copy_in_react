@@ -39,12 +39,12 @@ class PlayButton extends React.Component{
                             onClick={this.props.startGame}
                             style={styles.button}
                         />:
-                                <input
-                                    type="button"
-                                    value={this.props.value}
-                                    onClick={this.props.reloadGame}
-                                    style={styles.button}
-                                />
+                            <input
+                                type="button"
+                                value={this.props.value}
+                                onClick={this.props.reloadGame}
+                                style={styles.button}
+                            />
                 }
             </div>
         );

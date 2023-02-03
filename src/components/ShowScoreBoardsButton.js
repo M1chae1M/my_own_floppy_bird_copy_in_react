@@ -1,6 +1,6 @@
 import React from "react";
 
-class ShowScoreBoardsButton extends React.Component{
+export default class ShowScoreBoardsButton extends React.Component{
     render(){
         const styles={
             ShowScoreBoardsButton:{
@@ -32,8 +32,6 @@ class ShowScoreBoardsButton extends React.Component{
                     style={styles.button}
                 />
             </div>
-        )
+        );
     }
 }
-
-export default ShowScoreBoardsButton;

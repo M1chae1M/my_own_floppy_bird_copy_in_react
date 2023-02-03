@@ -1,17 +1,7 @@
 import React from "react";
 import BoardScores from "./objects/BoardScores";
 
-// var scoreBoardTab=[];
-// const downloadData=()=>{
-//     let data=JSON.parse(localStorage.getItem('scoreBoard'));
-//     if(data!==null && data !==undefined){
-//         scoreBoardTab=[];
-//         data.map((x,i)=>scoreBoardTab.push(x));
-//     }
-// }
-// window.onload=downloadData();
-
-class AddNewRecordToScoreBoards extends React.Component{
+export default class AddNewRecordToScoreBoards extends React.Component{
     render(){
         var scoreBoardTab=[];
         const styles={
@@ -124,8 +114,6 @@ class AddNewRecordToScoreBoards extends React.Component{
                 <input type="text" placeholder="Your nick" id="yourNickInput" style={styles.yourNickInput}/>
                 <input type="button" value="Sign to scoreboard" onClick={addNewRecord} style={styles.button}/>
             </div>
-        )
+        );
     }
 }
-
-export default AddNewRecordToScoreBoards;

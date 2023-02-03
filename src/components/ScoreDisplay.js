@@ -1,5 +1,6 @@
 import React from "react";
-class ScoreDisplay extends React.Component{
+
+export default class ScoreDisplay extends React.Component{
     render(){
         const styles={
             ScoreDisplay:{
@@ -26,7 +27,6 @@ class ScoreDisplay extends React.Component{
             <div id="ScoreDisplay" style={styles.ScoreDisplay}>
                 Score: {this.props.actualScore}
             </div>
-        )
+        );
     }
 }
-export default ScoreDisplay;

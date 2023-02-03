@@ -1,7 +1,7 @@
 import React from "react";
 import flappyBird from '../img/b0f4ca051aa111f.png';
 
-class Bird extends React.Component{
+export default class Bird extends React.Component{
     render(){
         const styles={
             Bird:{
@@ -21,5 +21,3 @@ class Bird extends React.Component{
         );
     }
 }
-
-export default Bird;

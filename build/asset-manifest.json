@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/my_own_floppy_bird_copy_in_react/build/static/css/main.0767a01f.css",
-    "main.js": "/my_own_floppy_bird_copy_in_react/build/static/js/main.3e23a3ff.js",
+    "main.js": "/my_own_floppy_bird_copy_in_react/build/static/js/main.b9de5f60.js",
     "static/media/b0f4ca051aa111f.png": "/my_own_floppy_bird_copy_in_react/build/static/media/b0f4ca051aa111f.87296a51efbc1fb5755e.png",
     "index.html": "/my_own_floppy_bird_copy_in_react/build/index.html",
     "main.0767a01f.css.map": "/my_own_floppy_bird_copy_in_react/build/static/css/main.0767a01f.css.map",
-    "main.3e23a3ff.js.map": "/my_own_floppy_bird_copy_in_react/build/static/js/main.3e23a3ff.js.map"
+    "main.b9de5f60.js.map": "/my_own_floppy_bird_copy_in_react/build/static/js/main.b9de5f60.js.map"
   },
   "entrypoints": [
     "static/css/main.0767a01f.css",
-    "static/js/main.3e23a3ff.js"
+    "static/js/main.b9de5f60.js"
   ]
 }

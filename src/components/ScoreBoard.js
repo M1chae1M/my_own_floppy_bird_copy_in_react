@@ -1,7 +1,7 @@
 import React from "react";
 var scoreBoardTab=[];
 
-class ScoreBoard extends React.Component{
+export default class ScoreBoard extends React.Component{
     render(){
         const styles={
             ScoreBoard:{
@@ -80,8 +80,6 @@ class ScoreBoard extends React.Component{
                     </table>
                 }
             </div>
-        )
+        );
     }
 }
-
-export default ScoreBoard;

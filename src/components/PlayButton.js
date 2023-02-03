@@ -1,6 +1,6 @@
 import React from "react";
 
-class PlayButton extends React.Component{
+export default class PlayButton extends React.Component{
     render(){
         const styles={
             PlayButton:{
@@ -50,5 +50,3 @@ class PlayButton extends React.Component{
         );
     }
 }
-
-export default PlayButton;

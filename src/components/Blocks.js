@@ -2,7 +2,7 @@ import React from "react";
 import Block from "./Block";
 import BlockObject from "./objects/BlockObject";
 
-class Blocks extends React.Component{
+export default class Blocks extends React.Component{
     render(){
         const numberOfRenderedBlocks=30;
         const styles={
@@ -49,5 +49,3 @@ class Blocks extends React.Component{
         );
     }
 }
-
-export default Blocks;

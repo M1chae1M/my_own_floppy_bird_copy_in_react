@@ -8,7 +8,7 @@ import AddNewRecordToScoreBoards from "./AddNewRecordToScoreBoard";
 import Bird from "./Bird";
 import Blocks from "./Blocks";
 
-class GameArea extends React.Component{
+export default class GameArea extends React.Component{
     state={
         birdPosition:160,
         score:0,
@@ -24,7 +24,6 @@ class GameArea extends React.Component{
         checkIsScoreBoardIsShorterThen10=
             checkIsScoreBoardIsEmpty===true?
                 JSON.parse(localStorage.getItem('scoreBoard')).length<10:null;
-
         const styles={
             GameArea:{
                 overflow:'hidden',
@@ -71,7 +70,6 @@ class GameArea extends React.Component{
             heightDifference=variables.GameArea.height-variables.Bird.height;
 
             if(this.state.newGameState===1){
-
                 if(this.state.birdPosition>this.props.minimumNumber&&this.state.birdPosition<heightDifference){
                     this.setState({birdPosition:this.state.birdPosition-1});
                         if(this.state.birdRotate==='up'){
@@ -90,7 +88,6 @@ class GameArea extends React.Component{
                             this.setState({tableWithObjectsState:this.props.tableWithObjects});
                             countScore(this.state.score);
                         }
-
                     this.setState({tableWithObjectsState:this.props.tableWithObjects});
                 }
 
@@ -134,6 +131,7 @@ class GameArea extends React.Component{
                 id="GameArea"
                 style={styles.GameArea}
                 onLoad={()=>{this.setState({GameAreaHeight:document.querySelector('#GameArea').getBoundingClientRect().height})}}
+                onClick={jump}
             >
                 {
                     this.state.newGameState===0||this.state.newGameState===2||this.state.newGameState===3?
@@ -216,5 +214,3 @@ class GameArea extends React.Component{
         );
     }
 }
-
-export default GameArea;

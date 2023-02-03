@@ -1,5 +1,6 @@
 import React from "react";
-class Block extends React.Component{
+
+export default class Block extends React.Component{
     render(){
         const styles={
             Pipe:{
@@ -32,4 +33,3 @@ class Block extends React.Component{
         );
     }
 }
-export default Block;

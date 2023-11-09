@@ -1,0 +1,13 @@
+*{box-sizing:border-box;padding:0;margin:0;}
+html,body,#root,.Blocks,#GameArea{width:100vw;height:100vh;position:relative;}
+:root{
+    --border-color:rgb(182, 30, 0);
+    --border-width:3px;
+    --border-style:solid;
+    --darkGreen:rgb(1, 88, 1);
+}
+.hidden{display:none !important;}
+@keyframes moveblocks{
+    from{left:0px;}
+    to{left:-99999px;}
+}

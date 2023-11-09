@@ -1,0 +1,2 @@
+*{box-sizing:border-box;margin:0;padding:0}#GameArea,#root,.Blocks,body,html{height:100vh;position:relative;width:100vw}:root{--border-color:#b61e00;--border-width:3px;--border-style:solid;--darkGreen:#015801}.hidden{display:none!important}@keyframes moveblocks{0%{left:0}to{left:-99999px}}
+/*# sourceMappingURL=main.9010c902.css.map*/

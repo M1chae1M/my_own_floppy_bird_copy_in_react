@@ -1,0 +1,14 @@
+{
+  "files": {
+    "main.css": "/my_own_floppy_bird_copy_in_react/build/static/css/main.9010c902.css",
+    "main.js": "/my_own_floppy_bird_copy_in_react/build/static/js/main.1f42b6a5.js",
+    "static/media/b0f4ca051aa111f.png": "/my_own_floppy_bird_copy_in_react/build/static/media/b0f4ca051aa111f.87296a51efbc1fb5755e.png",
+    "index.html": "/my_own_floppy_bird_copy_in_react/build/index.html",
+    "main.9010c902.css.map": "/my_own_floppy_bird_copy_in_react/build/static/css/main.9010c902.css.map",
+    "main.1f42b6a5.js.map": "/my_own_floppy_bird_copy_in_react/build/static/js/main.1f42b6a5.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.9010c902.css",
+    "static/js/main.1f42b6a5.js"
+  ]
+}

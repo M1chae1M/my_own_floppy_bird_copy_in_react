@@ -6,12 +6,20 @@ import randomNumber from "./randomNumber";
 
 export default class Blocks extends React.Component{
     render(){
-        const {firstOrSecound,nextRender}=this.props
+        const {firstOrSecound}=this.props
+        const numberOfRenderedBlocks=30;
         return(
             <GameContext.Consumer>
             {value=>{
-                const {tableWithObjectsState,newGameState,blocksTransformTranslateX,firstRender,minimumNumber}=value??{}
-                const numberOfRenderedBlocks=30;
+                const {changeState,tableWithObjectsState,newGameState,blocksTransformTranslateX,firstRender,minimumNumber}=value??{};
+                const mapRender=()=>{
+                    const arr=[...tableWithObjectsState];
+                    for(let i=0;i<numberOfRenderedBlocks;i++){
+                        arr.push(new BlockObject(randomNumber(minimumNumber)))
+                    }
+                    changeState?.({tableWithObjectsState:arr})
+                }
+                (tableWithObjectsState?.length<numberOfRenderedBlocks) && firstRender && mapRender();
                 const styles={
                     Blocks:{
                         display:'flex',
@@ -20,20 +28,9 @@ export default class Blocks extends React.Component{
                         alignItems:firstOrSecound?'flex-start':'flex-end',
                         transform:`translateX(${blocksTransformTranslateX}px)`,
                         animation:newGameState===1 &&'moveblocks 599s linear forwards',
-                        webkitAnimation:newGameState===1 &&'moveblocks 599s linear forwards',
-                        mozAnimation:newGameState===1 &&'moveblocks 599s linear forwards',
-                        oAnimation:newGameState===1 &&'moveblocks 599s linear forwards',
-                        msAnimation:newGameState===1 &&'moveblocks 599s linear forwards',
                         transition:newGameState===1 &&'all 599s linear forwards',
                     }
                 }
-                const mapRender=()=>{
-                    for(let i=0;i<numberOfRenderedBlocks;i++){
-                        tableWithObjectsState[i]=new BlockObject(randomNumber(minimumNumber));
-                    }
-                    nextRender?.()
-                }
-                (tableWithObjectsState?.length<numberOfRenderedBlocks) && firstRender && mapRender();
                 const className=firstOrSecound?'Blocks firstBlocks':'Blocks secoundBlocks'
                 return(
                     <div className={className} style={styles.Blocks}>

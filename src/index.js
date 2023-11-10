@@ -78,16 +78,16 @@ export default class Game extends React.Component{
         const timers=()=>{
             const variables={
                 GameArea:{
-                    height: document.querySelector('#GameArea').getBoundingClientRect().height,
+                    height: document.querySelector('#GameArea')?.getBoundingClientRect().height,
                 },
                 firstBlock:{
-                    height: document.querySelector('.firstBlocks').firstElementChild.getBoundingClientRect().height,
-                    width: document.querySelector('.firstBlocks').firstElementChild.getBoundingClientRect().left,
-                    left: Math.round(document.querySelector('.Blocks').querySelectorAll('.Block')[0].getBoundingClientRect().left),
+                    height: document.querySelector('.firstBlocks').firstElementChild?.getBoundingClientRect().height,
+                    width: document.querySelector('.firstBlocks').firstElementChild?.getBoundingClientRect().left,
+                    left: Math.round(document.querySelector('.Blocks').querySelectorAll('.Block')[0]?.getBoundingClientRect().left),
                 },
                 secoundBlock:{
-                    width: document.querySelector('.secoundBlocks').firstElementChild.getBoundingClientRect().left,
-                    height: document.querySelector('.secoundBlocks').firstElementChild.getBoundingClientRect().height
+                    width: document.querySelector('.secoundBlocks').firstElementChild?.getBoundingClientRect().left,
+                    height: document.querySelector('.secoundBlocks').firstElementChild?.getBoundingClientRect().height
                 },
             };
             const heightDifference=variables.GameArea.height-this.state.bird.height;
@@ -113,6 +113,7 @@ export default class Game extends React.Component{
     }
     render(){
         const {firstRender,blocksJumpsMargins,minimumNumber,spaceBetweenBlocks,speed}=this.state
+        const changeState=(newState)=>this.setState(newState)
         const styles={
             GameArea:{
                 overflow:'hidden',
@@ -131,10 +132,10 @@ export default class Game extends React.Component{
         const reloadGame=()=>window.location.reload()
         const startGame=()=>this.setState({newGameState:1})
         window.onkeydown=jump;
-        const onLoad=()=>this.setState({GameAreaHeight:document.querySelector('#GameArea').getBoundingClientRect().height})
+        const onLoad=()=>this.setState({GameAreaHeight:document.querySelector('#GameArea')?.getBoundingClientRect().height})
         const {newGameState,scoreBoardShow,blocksTransformTranslateX,GameAreaHeight,tableWithObjectsState,birdPosition,birdRotate,score,checkIsScoreBoardIsEmpty,checkIsScoreBoardIsShorterThen10}=this.state
         return(
-            <GameContext.Provider value={{firstRender,blocksJumpsMargins,minimumNumber,spaceBetweenBlocks,speed,GameAreaHeight,tableWithObjectsState,newGameState,blocksTransformTranslateX,birdPosition,birdRotate,checkIsScoreBoardIsEmpty,checkIsScoreBoardIsShorterThen10,score,reloadGame}}>
+            <GameContext.Provider value={{changeState,firstRender,blocksJumpsMargins,minimumNumber,spaceBetweenBlocks,speed,GameAreaHeight,tableWithObjectsState,newGameState,blocksTransformTranslateX,birdPosition,birdRotate,checkIsScoreBoardIsEmpty,checkIsScoreBoardIsShorterThen10,score,reloadGame}}>
                 <div id="Game" style={styles.Game}>
                     <div id="GameArea" style={styles.GameArea} onLoad={onLoad} onClick={jump}>
                         <ShowScoreBoardsButton newGameState={newGameState} ShowScoreBoardsF={ShowScoreBoardsF} scoreBoardShow={scoreBoardShow}/>

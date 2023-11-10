@@ -1,5 +1,6 @@
 import React from "react";
 import TD from "./ScoreBoard/td";
+import Table from "./ScoreBoard/table";
 
 export default class ScoreBoard extends React.Component{
     state={
@@ -39,23 +40,21 @@ export default class ScoreBoard extends React.Component{
                 paddingTop:'5px',
                 zIndex:'1300',
             },
-            table:{
-                cellspacing:"0",
-                cellpadding:"0",
-                textAlign:'center',
-            },
         }
         return(
             <div id="ScoreBoard" className={scoreBoardShow?'':'hidden'} style={styles.ScoreBoard}>
                 {
                     scoreBoardTab?.length?
-                        <table style={styles.table}>
+                        <Table>
                             <thead>
-                                <TD>ID</TD>
-                                <TD>Nick</TD>
-                                <TD>Date</TD>
-                                <TD>Score</TD>
+                                <tr>
+                                    <TD>ID</TD>
+                                    <TD>Nick</TD>
+                                    <TD>Date</TD>
+                                    <TD>Score</TD>
+                                </tr>
                             </thead>
+                            <tbody>
                             {
                                 scoreBoardTab?.map(({nick,date,score},i)=>
                                     <tr key={i}>
@@ -66,10 +65,11 @@ export default class ScoreBoard extends React.Component{
                                     </tr>
                                 )
                             }
-                        </table>:
+                            </tbody>
+                        </Table>:
                     "Nie posiadamy aktualnej tabeli wyników. Bądź pierwszy :-)"
                 }
             </div>
-        );
+        )
     }
 }
